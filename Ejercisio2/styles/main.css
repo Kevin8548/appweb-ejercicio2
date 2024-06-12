@@ -12,7 +12,7 @@ body {
     background-color: beige;
     margin: 0;
     padding: 0;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
@@ -165,10 +165,47 @@ nav .profile-link a {
     border: 1px solid solid var(--color-primary);
     padding: 10px 15px;
     font-size: 12px;
+    background-color: rgb(49, 150, 238);
+    color: var(--color-black);
 }
 
 .blog-button:hoover  {
     border: 1px solid var(--color-white);
     color: var(--color-white);
     background-color: var(--color-black);
+}
+
+.blog-posts-container .post-container{
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.blog-posts-container .post-container img{
+    width: 50%;
+}
+
+.blog-posts-container .post-container p{
+    font-family: 'Roboto mono', monospace;
+    margin-bottom: 35px;
+}
+
+.blog-posts-container .post-container p:nth-child(2){
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: larger;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    border-top: 35px solid var(--color-primary);
+    text-align: center;
+}
+
+footer p{
+    color: #ffffff;
+    margin-top: 30px;
 }
